@@ -1,6 +1,6 @@
 package Arrays.Easy;
 // Input: nums = [10, 5, 2, 7, 1, 9],  k=15
-
+// used variable sized sliding window approach
 // Output: 4
 public class LongestSubarraySum {
     public static void main(String[] args) {
