@@ -16,8 +16,7 @@ public class NextPermutation {
             end--;
         }
 
-    }
-    public static void main(String args[]){
+    }    public static void main(String args[]){
         int nums[]={1,2,3};
         int idx=-1;
         for(int i=nums.length-2;i>=0;i--){
