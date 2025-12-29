@@ -37,7 +37,8 @@ public class SpiralMatrix {
                 }
                 left++;
             }
-        }
+        }   
+        
     for(int i:ans) System.out.print(i+" ");
     }
 }
