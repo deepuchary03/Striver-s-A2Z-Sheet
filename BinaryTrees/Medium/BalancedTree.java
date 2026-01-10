@@ -1,23 +1,29 @@
 package BinaryTrees.Medium;
 import java.util.*;
-// Input: root = [3,9,20,null,null,15,7]
-// Output: 3
-public class HeightOfTree {
+// Input : [3, 9, 20, null, null, 15, 7]
 
-    public static int height(TreeNode root)
-    {
+// Output : Yes
+
+public class BalancedTree {
+
+    public static boolean balanced(TreeNode root){
+        return bal(root)!=-1;
+    }
+    public static int bal(TreeNode root){
         if(root==null) return 0;
-        int lh=height(root.left);
-        int rh=height(root.right);
-
+        int lh=bal(root.left);
+        if(lh==-1) return -1;
+        int rh=bal(root.right);
+        if(rh==-1) return -1;
+        if(Math.abs(lh-rh)>1) return -1;
         return 1+Math.max(lh,rh);
     }
 
     public static void main(String[] args) {
-        Integer[] arr={3,9,20,null,null,15,7};// input
+        Integer[] arr={3, 9, 20, null, null, 15, 7};// input
 
         TreeNode root=buildTree(arr);
-        System.out.println(height(root));// output 
+        System.out.println(balanced(root));// output 
     }
     public static TreeNode buildTree(Integer[] arr) {
             if (arr.length == 0 || arr[0] == null) return null;
