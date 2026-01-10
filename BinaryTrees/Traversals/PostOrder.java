@@ -1,18 +1,19 @@
 package BinaryTrees.Traversals;
+// Input : root = [1, 4, null, 4, 2]
+
+// Output : [4, 2, 4, 1]
 import java.util.*;
-// Input : root = [1, 4, null, 4 2]
-// Output : [1, 4, 4, 2]
-public class Preorder {
-    public static ArrayList<Integer> preorder(TreeNode root){
+public class PostOrder {
+ public static ArrayList<Integer> postorder(TreeNode root){
         ArrayList<Integer> ans=new ArrayList<>();
-        pre(root,ans);
+        post(root,ans);
         return ans;
     }
-    public static void pre(TreeNode root,ArrayList<Integer> ans){
+    public static void post(TreeNode root,ArrayList<Integer> ans){
         if(root==null) return;
+        post(root.left,ans);
+        post(root.right,ans);
         ans.add(root.val);
-        pre(root.left,ans);
-        pre(root.right,ans);
     }
     
     
@@ -22,7 +23,7 @@ public class Preorder {
         Integer[] arr={1, 4, null, 4, 2};// input
 
         TreeNode root=buildTree(arr);
-        System.out.println(preorder(root));// output 
+        System.out.println(postorder(root));// output 
     }
     public static TreeNode buildTree(Integer[] arr) {
             if (arr.length == 0 || arr[0] == null) return null;
@@ -58,4 +59,5 @@ class TreeNode {
         left = right = null;
     }
 }
+
 
