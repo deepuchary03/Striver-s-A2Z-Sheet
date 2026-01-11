@@ -33,7 +33,6 @@ public class PostOrder {
             int i = 1;
             while (i < arr.length) {
                 TreeNode curr = q.poll();
-    
                 if (i < arr.length && arr[i] != null) {
                     curr.left = new TreeNode(arr[i]);
                     q.add(curr.left);
@@ -49,11 +48,9 @@ public class PostOrder {
             return root;
         }
 }
-
 class TreeNode {
     int val;
     TreeNode left, right;
-
     TreeNode(int val) {
         this.val = val;
         left = right = null;
