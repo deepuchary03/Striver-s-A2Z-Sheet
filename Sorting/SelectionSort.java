@@ -7,19 +7,23 @@ package Sorting;
 
 
 public class SelectionSort {
+    public static void selectionSort(int[] arr){
+        for(int i=0;i<arr.length;i++){
+            int minIdx=i;
+            for(int j=i;j<arr.length;j++)
+                {
+                    if(arr[j]<arr[minIdx]){
+                        minIdx=j;
+                    }
+                }
+            int temp=arr[i];
+            arr[i]=arr[minIdx];
+            arr[minIdx]=temp;
+        }
+    }
     public static void main(String args[]){
         int nums[]={7, 4, 1, 5, 3};
-        for(int i=0;i<nums.length-1;i++){
-            int minIdx=i;
-            for(int j=i;j<nums.length;j++){
-                if(nums[j]<nums[minIdx]){
-                    minIdx=j;
-                }
-            }
-            int temp=nums[i];
-            nums[i]=nums[minIdx];
-            nums[minIdx]=temp;
-        }
+        selectionSort(nums);
         for(int i:nums) System.out.print(i+" ");
     }
 }
