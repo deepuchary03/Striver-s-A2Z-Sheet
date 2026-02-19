@@ -14,7 +14,6 @@ public class MaximumProductSubarray {
             s=(s==0?1:s)*nums[n-i-1];
             int temp=Math.max(p,s);
             ans=Math.max(ans,temp);
-
         }
         return ans;
     }
