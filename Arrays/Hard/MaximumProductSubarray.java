@@ -1,6 +1,5 @@
 package Arrays.Hard;
 // Input: nums = [4, 5, 3, 7, 1, 2]
-
 // Output: 840
 public class MaximumProductSubarray {
      public static int maxProduct(int[] nums) {
