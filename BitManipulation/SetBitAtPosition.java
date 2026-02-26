@@ -8,7 +8,6 @@ public class SetBitAtPosition {
         System.out.println(n);
     }
 }
-
 // 8 4 2 1
 // 1 0 1 0 -10
 // 1 1 1 0 -14
