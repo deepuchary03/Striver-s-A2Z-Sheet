@@ -1,6 +1,5 @@
 package BitManipulation;
 // Input: n = 10, i = 1
-
 // Output: true
 public class SetBit {
     public static boolean check(int n,int i){
