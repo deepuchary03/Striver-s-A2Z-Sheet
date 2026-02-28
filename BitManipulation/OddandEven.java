@@ -5,6 +5,12 @@ public class OddandEven {
         if((n&1)==1) s=s+""+n+" is odd";
         else if((n&1)==0)  s=s+""+n+" is even";
         return s;
+
+
+
+
+
+        
     }
     public static void main(String[] args) {
         int n=10;
