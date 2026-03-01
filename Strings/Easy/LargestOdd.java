@@ -17,6 +17,9 @@ public class LargestOdd {
         while(i<=idx && s.charAt(i)=='0') i++;
         return s.substring(i,idx+1);
     }
+
+
+    
     public static void main(String[] args) {
         String s="52";
         System.out.println(largest(s));

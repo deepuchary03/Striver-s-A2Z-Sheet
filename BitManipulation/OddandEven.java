@@ -6,10 +6,6 @@ public class OddandEven {
         else if((n&1)==0)  s=s+""+n+" is even";
         return s;
 
-
-
-
-
         
     }
     public static void main(String[] args) {
