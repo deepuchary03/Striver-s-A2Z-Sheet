@@ -5,15 +5,16 @@ import java.util.*;
 public class InOrder {
     public static ArrayList<Integer> Inorder(TreeNode root){
         ArrayList<Integer> ans=new ArrayList<>();
-        in(root,ans);
+        inorder(root,ans);
         return ans;
     }
-    public static void in(TreeNode root,ArrayList<Integer> ans){
+    public static void inorder(TreeNode root,ArrayList<Integer> ans){
         if(root==null) return;
-        in(root.left,ans);
+        inorder(root.left,ans);
         ans.add(root.val);
-        in(root.right,ans);
+        inorder(root.right,ans);
     }
+   
 
    public static void main(String[] args) {
         Integer[] arr={1, 4, null, 4, 2};// input
