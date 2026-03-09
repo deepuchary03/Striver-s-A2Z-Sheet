@@ -14,8 +14,6 @@ public class InOrder {
         ans.add(root.val);
         inorder(root.right,ans);
     }
-   
-
    public static void main(String[] args) {
         Integer[] arr={1, 4, null, 4, 2};// input
 
