@@ -15,6 +15,10 @@ public class NumberOfGoodPairs {
                 hm.put(i,1);
             }
         }
+
+
+
+        
         System.out.println(ans);
     }
 }

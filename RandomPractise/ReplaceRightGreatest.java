@@ -10,6 +10,8 @@ public class ReplaceRightGreatest {
             nums[i]=max;
             max=Math.max(max,temp);
         }
+
+        
         for(int i: nums) System.out.print(i+" ");
     }
 }
