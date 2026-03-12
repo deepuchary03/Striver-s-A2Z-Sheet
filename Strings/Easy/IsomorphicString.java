@@ -12,6 +12,7 @@ public class IsomorphicString {
             char ch2=t.charAt(i);
             if(!hm.containsKey(ch1)&&!rev.containsKey(ch2)){
                 hm.put(ch1,ch2);
+                rev.put(ch2,ch1);
             }else if(hm.containsKey(ch1)&&hm.get(ch1)!=ch2) return false;
             else if(rev.containsKey(ch2) && rev.get(ch2)!=ch1) return false;
 
