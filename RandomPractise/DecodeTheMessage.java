@@ -12,7 +12,6 @@ public class DecodeTheMessage {
                 hm.put(c,(char) temp);
                 temp++;
             }
-
         }
         for(char c:hm.keySet()) System.out.println(c+" -> "+hm.get(c));
         StringBuilder ans=new StringBuilder();
@@ -20,6 +19,7 @@ public class DecodeTheMessage {
             if(c==' ') ans.append(" ");
             else ans.append(hm.get(c));
         }
+        String res=ans.toString();
        System.out.println(ans.toString());
     }
 }
