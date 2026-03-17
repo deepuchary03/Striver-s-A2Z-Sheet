@@ -1,5 +1,7 @@
 package RandomPractise;
 // Input: nums = [1,2,2,4]
+
+
 // Output: [2,3]
 import java.util.*;
 public class SetMismatch {
@@ -13,7 +15,6 @@ public class SetMismatch {
             }else{
                 hs.add(i);
             }
-
         }
         for(int i=1;i<=nums.length;i++){
             if(!hs.contains(i)) {
