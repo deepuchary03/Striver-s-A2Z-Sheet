@@ -20,6 +20,6 @@ public class DecodeTheMessage {
             else ans.append(hm.get(c));
         }
         String res=ans.toString();
-       System.out.println(ans.toString());
+       System.out.println(res);
     }
 }
