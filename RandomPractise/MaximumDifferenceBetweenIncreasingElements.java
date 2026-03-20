@@ -11,7 +11,7 @@ public class MaximumDifferenceBetweenIncreasingElements {
             if(left<nums[i]) ans=Math.max(ans,nums[i]-left);
             left=Math.min(left,nums[i]);
         }
-      
+        ans=ans;
         System.out.println(ans);
     }
 }
