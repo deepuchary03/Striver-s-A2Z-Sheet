@@ -13,7 +13,7 @@ public class PivotIndex {
         }
         return -1;
     }
-    public static void main(String a[]){
+public static void main(String a[]){
         int[] nums={1,7,3,6,5,6};
         System.out.println(findPiv(nums));
 
