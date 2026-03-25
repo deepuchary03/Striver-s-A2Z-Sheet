@@ -4,7 +4,7 @@ package StackandQueues;
 // index         3  2  3   5   5
 import java.util.Stack;
 
-public class NextGreaterElementIndex {
+public class NextSmallerElementIndex {
     public static void main(String args[]){
         int[] nums={4,8,5,2,25};
        Stack<Integer> st=new Stack<>();
