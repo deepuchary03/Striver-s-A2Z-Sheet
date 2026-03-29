@@ -17,7 +17,6 @@ public class PrevSmallerElementIndex {
             ans[i]=st.size()==0?-1:st.peek();
             st.push(i);
         }
-        for(int i:ans) System.out.print(i+" ");
-        
+        for(int i:ans) System.out.print(i+" ");     
     }
 }
