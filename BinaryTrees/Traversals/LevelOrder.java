@@ -56,11 +56,9 @@ public static void level(TreeNode root,ArrayList<ArrayList<Integer>> ans)
             return root;
         }
 }
-
 class TreeNode {
     int val;
     TreeNode left, right;
-
     TreeNode(int val) {
         this.val = val;
         left = right = null;
