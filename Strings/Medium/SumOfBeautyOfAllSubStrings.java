@@ -2,9 +2,7 @@ package Strings.Medium;
 // Input: s = "aabcb"
 // Output: 5
 // Explanation: The substrings with non-zero beauty are ["aab","aabc","aabcb","abcb","bcb"], each with beauty equal to 1.
-
 import java.util.HashMap;
-
 public class SumOfBeautyOfAllSubStrings {
     public static int sum(String s){
         int n=s.length();
