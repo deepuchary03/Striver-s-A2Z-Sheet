@@ -15,7 +15,7 @@ public class LongestSubarraySum {
                 temp=temp-nums[l];
                 l++;
             }
-            if(temp==k) ans=Math.max(ans,r-l+1)
+            if(temp==k) ans=Math.max(ans,r-l+1);
         }
 
 
