@@ -4,18 +4,22 @@ import java.util.HashMap;
 // Output: [0, 1]
 public class TwoSum {
     public static void main(String args[]){
-        int[] nums={1, 6, 2, 10, 3};
+        int[] nums = {1, 6, 2, 10, 3};
         int target=7;
+        int[] ans=twoSum(nums,target);
+        for(int i:ans) System.out.print(i+" ");
+    }
+    public static int[] twoSum(int[] arr,int target){
+        int ans[]={-1,-1};
         HashMap<Integer,Integer> hm=new HashMap<>();
-        for(int i=0;i<nums.length;i++){
-             int temp=target-nums[i];
-            if(hm.containsKey(temp) && i!=hm.get(temp)){
-                System.out.println(hm.get(temp)+" "+i);
-                return;
+        for(int i=0;i<arr.length;i++){
+            if(hm.containsKey(target-arr[i])){
+                ans[0]=hm.get(target-arr[i]);
+                ans[1]=i;
             }
-               hm.put(nums[i],i);
-            
+            hm.put(arr[i],i);
         }
+        return ans;
     }
     
 }
